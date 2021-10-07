@@ -22,11 +22,18 @@
             let flutter=document.getElementById("flutter").value;
             let java=document.getElementById("java").value;
             let js=document.getElementById("javascript").value;
-            if(flutter >= 50 && java>= 50 && js >= 50){
+
+            if(flutter >= 50 && java >= 50 && js >= 50 && flutter < 80 && java < 80 && js < 80 ){
                 let pass = document.getElementById("exam_result");
                 //console.log(pass);
                 pass.innerHTML="<h1>This Student is Pass!</h1>"
-            }else{
+
+            }else if(flutter>= 80 && java>= 80 && js>= 80){
+                let distinction = document.getElementById("exam_result");
+                //console.log(distinction);
+                distinction.innerHTML="<h1>This Student pass with distinction!</h1>"
+
+        }else{
                 let fail = document.getElementById("exam_result");
                 //console.log(fail);
                 fail.innerHTML="<h1>This Student is Fail!</h1>"
