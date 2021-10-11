@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table JS Homework</title>
+</head>
+<body >
+    <center>
+    <table >
+        <form action="">
+            <tr>
+                <td><label for="No">No.</label></td>
+                <td><input type="number" id="No"></td>
+            </tr>
+            <tr>
+                <td><label for="Name">Name</label></td>
+                <td><input type="text" id="Name" name = "name" placeholder="mgmg"></td>
+            </tr>
+            <tr>
+            <td><label for="Age">Age</label></td>
+            <td><input type="number" id="Age"></td>
+            </tr>
+        </form>
+        </table>
+        <br>
+         <button onclick="addRow()">Show</button>
+            <br><br>
+            <center>
+                <table border="1" cellpadding ="10" cellspacing ="0" id="show">
+                    <thead>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+            </center> 
+            <script>
+                function showData(){
+                    let name = document.querySelector("#name").value;
+                    let age=document.querySelector("#age").value;
+                    let tbody=document.querySelector("#tbody");
+                        
+                    tbody.innerHTML= `<tr>
+                                <td>${i++}</td>
+                                <td>${name}</td>
+                                <td>${age}</td>
+                        </tr>`;
+                    }
+            </script>
+</center>   
+</body>
+</html>
