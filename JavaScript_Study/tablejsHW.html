@@ -9,35 +9,31 @@
 <body >
     <center>
     <table >
-        <form action="">
-            <tr>
-                <td><label for="No">No.</label></td>
-                <td><input type="number" id="No"></td>
-            </tr>
             <tr>
                 <td><label for="Name">Name</label></td>
-                <td><input type="text" id="Name" name = "name" placeholder="mgmg"></td>
+                <td><input type="text" id="name" name = "name" placeholder="mgmg"></td>
             </tr>
             <tr>
             <td><label for="Age">Age</label></td>
-            <td><input type="number" id="Age"></td>
+            <td><input type="number" id="age" name="age"></td>
             </tr>
-        </form>
         </table>
         <br>
-         <button onclick="addRow()">Show</button>
+            <button onclick="showData()">Show</button>
             <br><br>
             <center>
                 <table border="1" cellpadding ="10" cellspacing ="0" id="show">
-                    <thead>
+                    <tr>
                     <th>No.</th>
                     <th>Name</th>
                     <th>Age</th>
-                </thead>
+                </tr>
                 <tbody id="tbody"></tbody>
-            </table>
             </center> 
+        </table>
+            <br>  <br>
             <script>
+                let i =1;
                 function showData(){
                     let name = document.querySelector("#name").value;
                     let age=document.querySelector("#age").value;

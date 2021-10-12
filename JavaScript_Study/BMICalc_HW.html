@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+
+    <label>
+    <p>Weight(lbs): <input type="number" id="weight"> </p>
+    <p>Foot(ft): <input type="number" id="foot"></p>
+    <p>Inches(inc): <input type="number" id="inches"></p>
+</label>
+    <button onclick="Calculate()">Calculate</button>
+    <h3> <p><span id="comment"></span></p></h3>
+            <span id="BMI"></span>
+    <script>
+        function Calculate(){
+            let weight=document.getElementById("weight").value;
+            let foot=document.getElementById("foot").value;
+            let inches=document.getElementById("inches").value;
+            let inc = (foot*12)+inches
+            let BMI= (weight/inc*inc)*703;
+
+        if (BMI<18.5)
+            document.getElementById("comment").innerHTML = "You are in the Underweight range";
+            if (BMI>=18.5 && BMI<=24.9)
+            document.getElementById("comment").innerHTML = "You are in the Normalweight range";
+            if (BMI>=25 && BMI<=29.9)
+            document.getElementById("comment").innerHTML= "You are in the Overweight range";
+            if (BMI>30)
+            document.getElementById("comment").innerHTML= "You are in the Obese";
+            // document.getElementById("BMI").innerHTML = comment; 
+        }
+
+//         if(!isNaN(result)){
+//         document.getElementById("output").innerHTML = result;
+//         if(result < 18.5){
+//             document.getElementById("comment").innerHTML = "You are in the Underweight range";
+//         }
+//         else if(result < 25){
+//             document.getElementById("comment").innerHTML = "You are in the Healthy range";
+//         }
+//         else if(result < 30){
+//             document.getElementById("comment").innerHTML = "You are in the Overweight range";
+//         }
+//         else{
+//             document.getElementById("comment").innerHTML = "You are in the Obesity range";
+//         }
+//     }
+// }
+    </script>
+
+        <h2>BMI weight ranges</h2>
+        <p> Less than18.5= Underweight</p>
+        <p>Between 18.5 - 24.9 = Healthy Weight</p>
+       <p>Between 25-29.9= Overweight</p> 
+        <p>Over 30 = Obese</p>
+</body>
+</html>
