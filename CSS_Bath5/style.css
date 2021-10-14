@@ -1,0 +1,46 @@
+h1{
+    text-align: center;
+    color: red;
+}
+/*universal selector*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/*Tag/Element selector*/
+h4{
+    /*color : red; text*/
+    /*color : #foo;short hex*/
+    /*color ; #ffoooo ; hex*/
+    color: rgb(255, 0,0);
+    word-spacing: 20px;
+    line-height: 50px;
+    text-indent: 40px;
+}
+/*attribute selector*/
+a[title= "google"]{
+    text-decoration : none;
+    color: green;
+}
+/*id selector*/
+p#idselector{
+    color: green;
+    letter-spacing: 10px;
+    text-align: justify;
+    text-indent: 50px;
+}
+/*class selector*/
+.classselector{
+    color:brown;
+    line-height: 30px;
+    word-spacing: 40px;
+    text-indent: 50px;
+}
+/*Descendent Selector*/
+p a{
+    color: red;
+}
+/*child selector*/
+p.child>a{
+    color: green;
+}
