@@ -172,3 +172,80 @@ p:empty{
     width: 400px;
     display: inline-block;
 }
+/* float */
+.floatleft img{
+    width: 40%;
+    float: left;
+}
+.clear{
+    clear:both;
+}
+.floatright img{
+    width: 40%;
+    float: right;
+}
+    /* grid */
+.gridone div,.gridtwo div,.gridthree div,.gridfour div,.gridfive div,.gridsix div{
+    padding: 20px;
+    text-align:center;
+    color:white;
+}
+.gridone,.gridtwo,.gridthree,.gridfour,.gridfive,.gridsix{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.gridtwo{
+    grid-column-gap:50px ;
+}
+.gridthree{
+    grid-row-gap:50px;
+}
+.gridfour{
+    grid-gap: 40px;
+}
+.addcolumn{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.addrows{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+/* position */
+.relative_parents{
+    border: 1px solid red;
+    width: 1000px;
+    height: 500px;
+}
+.relative{
+    border: 1px solid yellow;
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+.absolute_parent{
+    position: relative;
+    border: 1px solid black;
+    width: 1000px;
+    height: 600px;
+}
+.absolute{
+    border: 1px solid red;
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    top: 10px;
+    left: 500px;
+}
+.online{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+@font-face {
+    font-family: a;
+    src: url(fontstyles/Barlow_Condensed/BarlowCondensed-BlackItalic.ttf);
+}
+.offline{
+    font-family: a;
+}
