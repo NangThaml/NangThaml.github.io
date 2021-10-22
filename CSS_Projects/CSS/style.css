@@ -34,3 +34,57 @@
     padding-top: 30px;
     text-transform: uppercase;
 }
+.background ul li:hover{
+    color: gold;
+    transform: translate(4px,-5px);
+    transition-duration: 0.4s;
+}
+.background_img{
+    background-image: url(../images/background.jpg);
+    height: 570px;
+}
+.beerbar{
+    position: relative;
+    top: 190px;
+    left: 370px;
+    color: gold;
+    font-family: great;
+    font-size: 40px;
+}
+.read{
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid gold;
+    background-color: black;
+    color: white;
+    margin-left: 90px;
+}
+/* end background */
+.grid{
+    display: grid;
+    grid-template-columns: 600px auto auto;
+}
+div.grid .grid_one{
+    grid-row-start:1;
+    grid-row-end:3;
+    text-align:left;
+    padding: 70px 50px 0px 90px;
+}
+.grid div{
+    border: 4px solid #212326;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.perfect{
+    color:gold;
+}
+.readmore{
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+div.grid.grid_other{
+    padding: 10px 50px 30px 50px;
+}
